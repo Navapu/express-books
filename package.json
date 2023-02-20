@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^6.0.7"
+    "express-handlebars": "^6.0.7",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
   }
 }

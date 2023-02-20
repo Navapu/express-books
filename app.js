@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const { engine } = require('express-handlebars')
 const path = require('path')
+// const logger = require('morgan');
 const indexRouter = require('./routes/index');
 
 
@@ -16,6 +17,9 @@ app.engine('.hbs', engine({
 
 app.set('view engine', '.hbs');
 
+// app.use(logger('dev')); 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use('/', indexRouter)
 
 app.listen(3000)
