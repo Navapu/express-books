@@ -17,13 +17,14 @@
                 <div class="card-header">
                     <p>{{title}}</p>
                 </div>
+                <img src="{{imagen}}" class="card-img-top">
                 <div class="card-body">
                     <p>{{descripcion}}</p>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-danger">
-                        Delete
-                    </button>
+                   <a href="/delete/{{id}}" class="btn btn-danger">
+                    Borrar
+                   </a>
                 </div>
             </div>
         </div>
